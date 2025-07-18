@@ -1,0 +1,191 @@
+/* Estilos generales para la aplicación */
+body {
+  font-family: 'Inter', sans-serif; /* Fuente más moderna */
+  background-color: #f8f9fa; /* Fondo claro para toda la app */
+  color: #343a40; /* Color de texto por defecto */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #212529; /* Color más oscuro para los títulos */
+  font-weight: 700; /* Negrita para títulos */
+}
+
+/* Estilos para la barra de navegación */
+.navbar-brand img {
+  border-radius: 8px; /* Bordes redondeados para el logo */
+  transition: transform 0.3s ease; /* Animación al pasar el ratón */
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #0056b3 !important; /* Color azul para los enlaces de navegación */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #003f7f !important; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilos para el carrusel de experiencias destacadas */
+.carousel-img {
+  max-height: 400px; /* Altura máxima para las imágenes del carrusel */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+  border-radius: 12px; /* Bordes redondeados para las imágenes del carrusel */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.75); /* Fondo semitransparente para el texto */
+  border-radius: 8px; /* Bordes redondeados para el caption */
+  padding: 15px;
+  bottom: 20px; /* Posiciona el caption un poco más arriba */
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Estilos para las tarjetas de experiencia */
+.card {
+  border: none; /* Elimina el borde por defecto de la tarjeta */
+  border-radius: 12px; /* Bordes redondeados para las tarjetas */
+  overflow: hidden; /* Asegura que el contenido redondeado no se desborde */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el ratón */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+.card-img-top {
+  height: 200px; /* Altura fija para las imágenes de las tarjetas */
+  object-fit: cover; /* Asegura que la imagen cubra el área */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Estilos para botones */
+.btn {
+  border-radius: 8px; /* Bordes redondeados para todos los botones */
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-info:hover {
+  background-color: #138496;
+  border-color: #117a8b;
+}
+
+.btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #343a40 !important; /* Fondo oscuro para el footer */
+  color: #f8f9fa; /* Texto claro */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+footer a {
+  color: #adb5bd !important; /* Enlaces en gris claro */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff !important; /* Blanco al pasar el ratón */
+}
+
+/* Estilos para la página de Login/Registro */
+.card.p-4.shadow-sm {
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+/* Estilos para la página de Carrito */
+.table-responsive {
+  border-radius: 10px;
+  overflow: hidden; /* Para que los bordes redondeados se apliquen a la tabla */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 123, 255, 0.05); /* Un ligero azul para filas impares */
+}
+
+/* Estilos para la página de Admin */
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.1); /* Un ligero azul al pasar el ratón */
+}
+
+/* Estilos para el spinner de carga */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Ajustes para el Toastify */
+.Toastify__toast-container {
+  font-family: 'Inter', sans-serif;
+}
