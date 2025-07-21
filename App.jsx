@@ -1,16 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Experiencias from './pages/Experiencias';
-import Detalle from './pages/Detalle';
-import Contacto from './pages/Contacto';
-import Login from './pages/Login';
-import Admin from './pages/Admin';
-import Carrito from './pages/Carrito';
-import NotFound from './pages/NotFound';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
+import Home from './pages/Home.jsx';
+import Experiencias from './pages/Experiencias.jsx';
+import Detalle from './pages/Detalle.jsx';
+import Contacto from './pages/Contacto.jsx';
+import Login from './pages/Login.jsx';
+import Admin from './pages/Admin.jsx';
+import Carrito from './pages/Carrito.jsx';
+import NotFound from './pages/NotFound.jsx';
 import { ToastContainer } from 'react-toastify';
-import './App.css';
 
 function App() {
   return (
@@ -27,7 +26,8 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-      <ToastContainer />
+      {/* Añadido 'limit={1}' para evitar toasts duplicados */}
+      <ToastContainer limit={1} /> 
     </BrowserRouter>
   );
 }
